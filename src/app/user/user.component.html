@@ -1,0 +1,38 @@
+<div class="panel panel-primary container">
+  <div class="panel-heading">
+    Stock Information
+  </div>
+  <div class="panel-body">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+              <tr>
+                <th>transactionID</th>
+                <th>userId</th>
+                <th>stockName</th>
+                <th>noOfStocks</th>
+                <th>stockPrice</th>
+                <th>chargeBack</th>
+                <th>balanceAmount</th>
+                <th>role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let users1 of users">
+                  <td>{{users1.transactionID}}</td>
+                  <td>{{users1.userId}}</td>
+                  <td>{{users1.stockName}}</td>
+                  <td>{{users1.noOfStocks}}</td>
+                  <td>{{users1.stockPrice}}</td>
+                  <td>{{users1.chargeBack}}</td>
+                  <td>{{users1.balanceAmount}}</td>
+                  <td>{{users1.role}}</td>
+              </tr>
+            </tbody>
+
+        </table>
+    </div>
+      
+  </div>
+      
+</div>

@@ -1,0 +1,32 @@
+<div class="col-md-6 col-md-offset-3">
+    <h2>Login</h2>
+    <form name="form">
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" name="username"/>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        <br/> 
+         
+        <div class="controls" style="font-weight:700">
+                <select id="selectbasic" name="selectbasic" class="input-xlarge">
+                  <option>Role</option>
+                  <hr/>
+                  <option>Bank Represntative</option>
+                  <option>Individual User (INDL)</option>
+                  <option>Fund User (FUND)</option>
+                </select>
+        </div> 
+
+        <br/>
+
+        <div class="form-group">
+            <button class="btn btn-primary">Login</button>
+              <a routerLink="/register"><button class="btn btn-primary" >Register</button></a>  
+              <a [routerLink]="['/users']" class="btn btn-link">List all users</a>
+            </div>
+    </form>
+</div>
