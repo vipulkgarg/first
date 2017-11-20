@@ -1,0 +1,42 @@
+
+<div class="table-responsive">
+  <table class="table">
+      <thead>
+        <tr>
+          <th>UserName</th>
+          <th>Balance</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of userslist">
+            <td><a (click)="onSelect(user)">{{user.name}}</a></td>
+            <td>{{user.balance}}</td>
+        </tr>
+      </tbody>
+
+  </table>
+</div>
+     <div *ngIf="selecteduser" class="table-responsive">
+    <table class="table">
+        <thead>
+          <tr>
+            <th>transactionID</th>
+            <th>stockname</th>
+            <th>stockPrice</th>
+            <th>noOfStocks</th>
+            <th>balance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of selecteduser.transactions">
+              <td>{{user.txnId}}</td>
+              <td>{{user.stockname}}</td>
+              <td>{{user.stockPrice}}</td>
+              <td>{{user.noOfStocks}}</td>
+              <td>{{user.balance}}</td>
+          </tr>
+        </tbody>
+  
+    </table>
+  </div>
